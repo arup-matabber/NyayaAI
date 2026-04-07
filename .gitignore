@@ -1,0 +1,117 @@
+# ─────────────────────────────────────────────────────────────────
+# Nyaya AI — Global .gitignore
+# ─────────────────────────────────────────────────────────────────
+
+# ── Python ────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+.eggs/
+pip-wheel-metadata/
+*.spec
+
+# ── Virtual Environments ──────────────────────────────────────────
+venv/
+.venv/
+env/
+nyaya-env/
+core/nyaya-env/
+*.virtualenv
+
+# ── Environment Variables ─────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Database & Persistent State ───────────────────────────────────
+data/
+core/data/
+*.sqlite
+*.sqlite3
+*.db
+!core/engine/db/
+
+# ── LLM / AI Models (large binary files) ─────────────────────────
+core/models/
+core/BitNet/
+*.gguf
+*.bin
+*.safetensors
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.mlmodel
+
+# ── Generated PDFs & Outputs ─────────────────────────────────────
+core/output/
+data/uploads/
+*.pdf
+
+# ── Logs ──────────────────────────────────────────────────────────
+*.log
+logs/
+*.log.*
+
+# ── Node.js / Frontend ────────────────────────────────────────────
+client/node_modules/
+node_modules/
+client/dist/
+client/.vite/
+.npm
+
+# ── OS Generated ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ── IDE / Editor ──────────────────────────────────────────────────
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# ── Test & Debug Artifacts ────────────────────────────────────────
+test_stream.py
+test.txt
+test_input.txt
+batch_test_ocr.py
+*.test.pdf
+
+# ── Temporary files ───────────────────────────────────────────────
+tmp/
+.tmp/
+*.tmp
+*.bak
+*.orig
+
+# ── Coverage ──────────────────────────────────────────────────────
+.coverage
+htmlcov/
+.pytest_cache/
+
+# ── Jupyter ───────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Pentesting (old dev artefacts) ───────────────────────────────
+pentesting/
+
+# ── Encryption keys ───────────────────────────────────────────────
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
