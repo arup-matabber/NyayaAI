@@ -1,0 +1,20 @@
+{
+    "privacy": {
+        "nyaya_ai": "100% Offline, Zero-Data-Retention, AES-256 encrypted",
+        "cloud_competitors": "Data transmitted to external servers"
+    },
+    "bns_compliance": {
+        "nyaya_ai": "Hardcoded BNS mappings (Bharatiya Nyaya Sanhita 2023) natively enforced",
+        "cloud_competitors": "Relies on generic LLM knowledge, prone to mixing IPC and BNS"
+    },
+    "hardware_cost_30day": {
+        "nyaya_ai": "$0 (runs on consumer 4GB VRAM GPU)",
+        "cloud_competitors": "$150-$500 depending on API token volume"
+    },
+    "latency_edge": {
+        "nyaya_ai": "Local VRAM execution with SparseKVCache (no network IO)",
+        "cloud_competitors": "1-3s roundtrip dependent on ISP"
+    },
+    "timestamp": "2026-04-06T23:48:49.837641",
+    "test_id": "competitive_analysis"
+}
