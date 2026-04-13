@@ -1,0 +1,11 @@
+{
+    "os": "nt",
+    "cpu_cores": 16,
+    "ram_total_gb": 15.67,
+    "ram_available_gb": 2.68,
+    "gpu_model": "None detected (or GPUtil missing)",
+    "vram_total_mb": 0,
+    "vram_free_mb": 0,
+    "timestamp": "2026-04-06T23:48:49.679151",
+    "test_id": "bench_env"
+}
